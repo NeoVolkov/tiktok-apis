@@ -1,0 +1,35 @@
+{
+  "name": "tiktok-api-rapidapi",
+  "version": "1.0.0",
+  "description": "Easily connect to TikTok public data with the TikTok API on RapidAPI — fetch videos, users, hashtags, and download videos without watermark.",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "start": "node examples/nodejs/getUserProfile.js",
+    "test": "echo \"No tests specified\" && exit 0"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/NeoVolkov/tiktok-apis"
+  },
+  "keywords": [
+    "tiktok-api",
+    "tiktok-downloader",
+    "tiktok-video-api",
+    "tiktok-data-api",
+    "tiktok-trending-api",
+    "rapidapi-tiktok",
+    "tiktok-no-watermark",
+    "tiktok-sdk",
+    "rapidapi",
+    "tiktok-developer-api"
+  ],
+  "author": "DataHub APIs <contact@datahubapis.com>",
+  "license": "MIT",
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "dependencies": {
+    "axios": "^1.12.2"
+  }
+}
