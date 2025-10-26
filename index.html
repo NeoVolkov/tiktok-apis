@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>TikTok API Demo - RapidAPI</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <div class="container">
+      <header class="header">
+        <div class="header-content">
+          <h1>🎵 TikTok API Demo</h1>
+          <p>Test TikTok APIs via RapidAPI</p>
+        </div>
+      </header>
+
+      <div class="main-content">
+        <!-- API Key Input -->
+        <div class="card api-key-card">
+          <div class="card-header">
+            <h2>🔑 API Key Configuration</h2>
+          </div>
+          <div class="card-body">
+            <div class="form-group">
+              <label for="apiKey">RapidAPI Key:</label>
+              <input
+                type="password"
+                id="apiKey"
+                placeholder="Enter your RapidAPI Key"
+                class="input"
+              />
+              <small class="hint">
+                Get your API key at:
+                <a
+                  href="https://rapidapi.com/datahubapis1-datahubapis-default/api/tiktok-api45"
+                  target="_blank"
+                >
+                  TikTok API on RapidAPI
+                </a>
+              </small>
+            </div>
+          </div>
+        </div>
+
+        <!-- API Selector -->
+        <div class="card">
+          <div class="card-header">
+            <h2>🔧 Select API Endpoint</h2>
+          </div>
+          <div class="card-body">
+            <div class="api-grid">
+              <button class="api-button" data-api="get-user-detail">
+                <span class="icon">👤</span>
+                <span class="title">User Detail</span>
+                <span class="desc">Get user information</span>
+              </button>
+
+              <button class="api-button" data-api="get-user-post">
+                <span class="icon">📱</span>
+                <span class="title">User Posts</span>
+                <span class="desc">User's video list</span>
+              </button>
+
+              <button class="api-button" data-api="get-user-popular-post">
+                <span class="icon">🔥</span>
+                <span class="title">Popular Posts</span>
+                <span class="desc">User's popular videos</span>
+              </button>
+
+              <button class="api-button" data-api="get-user-followers">
+                <span class="icon">👥</span>
+                <span class="title">Followers</span>
+                <span class="desc">Followers list</span>
+              </button>
+
+              <button class="api-button" data-api="get-user-followings">
+                <span class="icon">🫂</span>
+                <span class="title">Followings</span>
+                <span class="desc">Following list</span>
+              </button>
+
+              <button class="api-button" data-api="download-video">
+                <span class="icon">⬇️</span>
+                <span class="title">Download Video</span>
+                <span class="desc">Download TikTok video</span>
+              </button>
+
+              <a
+                href="https://rapidapi.com/datahubapis1-datahubapis-default/api/tiktok-api45"
+                target="_blank"
+                class="api-button api-button-more"
+              >
+                <span class="icon">🚀</span>
+                <span class="title">Get More APIs</span>
+                <span class="desc">Explore 20+ more endpoints</span>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Parameters Form -->
+        <div class="card params-card" id="paramsCard" style="display: none">
+          <div class="card-header">
+            <h2>⚙️ Parameters</h2>
+          </div>
+          <div class="card-body">
+            <form id="paramsForm">
+              <div id="paramsContainer"></div>
+              <button type="submit" class="btn btn-primary">
+                <span class="btn-icon">🚀</span>
+                Call API
+              </button>
+            </form>
+          </div>
+        </div>
+
+        <!-- Loading -->
+        <div class="loading" id="loading" style="display: none">
+          <div class="spinner"></div>
+          <p>Processing...</p>
+        </div>
+
+        <!-- Results -->
+        <div class="card result-card" id="resultCard" style="display: none">
+          <div class="card-header">
+            <h2>📊 Results</h2>
+            <button class="btn-copy" id="copyBtn">📋 Copy</button>
+          </div>
+          <div class="card-body">
+            <pre id="resultContent"></pre>
+          </div>
+        </div>
+
+        <!-- Error -->
+        <div class="card error-card" id="errorCard" style="display: none">
+          <div class="card-header">
+            <h2>❌ Error</h2>
+          </div>
+          <div class="card-body">
+            <pre id="errorContent"></pre>
+          </div>
+        </div>
+      </div>
+
+      <footer class="footer">
+        <p>Made with ❤️ for TikTok API Testing</p>
+        <p class="footer-links">
+          <a href="https://github.com/NeoVolkov/tiktok-apis" target="_blank"
+            >GitHub</a
+          >
+          <span>•</span>
+          <a
+            href="https://rapidapi.com/datahubapis1-datahubapis-default/api/tiktok-api45"
+            target="_blank"
+            >RapidAPI</a
+          >
+        </p>
+      </footer>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
