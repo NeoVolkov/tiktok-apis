@@ -9,6 +9,10 @@ Integrate TikTok seamlessly using our **TikTok API** on RapidAPI. Access public 
 
 ---
 
+## 🌐 Live Demo
+
+## 👉 [TikTok API Playground – Try It Online](https://neovolkov.github.io/tiktok-apis/)
+
 ## 🚀 Features
 
 - Get **TikTok user info**, stats, and posts
