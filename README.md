@@ -9,6 +9,11 @@ Integrate TikTok seamlessly using our **TikTok API** on RapidAPI. Access public 
 
 ---
 
+📘 Related Projects
+
+You can integrate this API with our TikTok Algorithm project for deeper insights and ranking predictions:
+👉 [TikTok Algorithm – Reverse Engineered](https://github.com/NeoVolkov/tiktok-algorithm)
+
 ## 🌐 Live Demo
 
 ## 👉 [TikTok API Playground – Try It Online](https://neovolkov.github.io/tiktok-apis/)
